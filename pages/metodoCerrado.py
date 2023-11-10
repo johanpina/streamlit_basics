@@ -42,7 +42,7 @@ tabla = pd.DataFrame(columns=columnas)
 
 # Espacio reservado para la figura
 fig_placeholder = st.empty()
-
+tablita = st.empty()
 while error > tol:
     # Evaluamos la función en los puntos del intervalo
     fxl = y.subs({x: xl}).evalf()
@@ -75,7 +75,6 @@ while error > tol:
     error = np.abs((xr - xr_ant) / xr) * 100 if xr != 0 else 0
     nueva_fila = {'Xl': xl, 'Xu': xu, 'Xr': xr, 'er(%)': error, 'f(Xl)': fxl, 'f(Xu)': fxu, 'f(Xr)': fxr}
     tabla = pd.concat([tabla, pd.DataFrame([nueva_fila])], ignore_index=True)
-
     # Actualizamos los límites
     if fxl * fxr < 0:
         xu = xr
@@ -90,7 +89,7 @@ while error > tol:
 
     # Mostrar la figura en el espacio reservado
     fig_placeholder.pyplot(fig)
-
+    tablita.dataframe(tabla)
     # Borra la figura para la siguiente iteración
     plt.close(fig)
 
