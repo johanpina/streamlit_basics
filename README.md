@@ -25,5 +25,4 @@ Generar el ambiente
 
 `streamlit run home.py`
 
-
-[Enlace acá](https://uammetodos.streamlit.app/metodoCerrado)
+[ir a la app](https://uammetodos.streamlit.app/metodoCerrado)
