@@ -24,3 +24,6 @@ Generar el ambiente
 ## Ejecutar el programa localmente
 
 `streamlit run home.py`
+
+
+[Enlace acá](https://uammetodos.streamlit.app/metodoCerrado)
