@@ -23,4 +23,4 @@ Generar el ambiente
 
 ## Ejecutar el programa localmente
 
-`streamlit run main.py`
+`streamlit run home.py`
